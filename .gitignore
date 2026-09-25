@@ -1,0 +1,38 @@
+# --- R ---
+.Rhistory
+.RData
+.Rproj.user
+*.Rproj
+
+# --- Sistema ---
+.DS_Store
+Thumbs.db
+*~
+
+# --- Cache / temporários ---
+_targets/
+renv/library/
+renv/staging/
+renv/local/
+.Rprofile
+
+# --- Dados grandes (se quiser evitar versionar) ---
+# Os Parquets estão em ~7 MB, então NÃO ignoramos.
+# Se um dia crescerem muito, descomente:
+# bruto/sim/*.parquet
+# bruto/sinasc/*.parquet
+# bruto/sinan/**/*.parquet
+
+# --- Cache do PySUS / Python (se houver) ---
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# --- Logs e temporários ---
+*.log
+*.tmp
+tmp/
+
+# --- Chaves e segredos ---
+.env
+*.key
